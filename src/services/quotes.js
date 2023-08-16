@@ -3,7 +3,7 @@ import api from './apiConfig';
 // Function to get all quotes
 export const getQuotes = async () => {
     try {
-        const response = await api.get('/quotes');
+        const response = await api.get(`/quotes`);
         return response.data;
     } catch (error) {
         console.log("Error getting quotes", error)
@@ -13,7 +13,7 @@ export const getQuotes = async () => {
 // Function to get individual quote
 export const getQuote = async (id) => {
     try {
-        const response = await api.get(`/quotes/${quote}`);
+        const response = await api.get(`/quotes`);
         return response.data;
     } catch (error) {
         console.log("Error getting joke", error)
@@ -23,7 +23,7 @@ export const getQuote = async (id) => {
 // Function to create a quote
 export const createQuote = async (joke) => {
     try {
-        const response = await api.post('/quotes', joke);
+        const response = await api.post(`/quotes`);
         return response.data;
     } catch (error) {
         console.log("Error creating joke", error)
@@ -33,7 +33,7 @@ export const createQuote = async (joke) => {
 // Function to update a quote
 export const updateQuote = async (id, quote) => {
     try {
-        const response = await api.put(`/quotes/${quote}`, quote);
+        const response = await api.put(`/quotes`);
         return response.data;
     } catch (error) {
         console.log("Error updating quote", error)
@@ -43,7 +43,7 @@ export const updateQuote = async (id, quote) => {
 // Function to delete a quote
 export const deleteQuote = async (id) => {
     try {
-        const response = await api.delete(`/quotes/${quote}`);
+        const response = await api.delete(`/quotes`);
         return response.data;
     } catch (error) {
         console.log("Error deleting quote", error)

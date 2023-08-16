@@ -23,18 +23,18 @@ export default function QuoteDetail() {
     }
 
     return (
-        <>
+        <div>
             <h1>{quote.quote}</h1>
             <h2>{quote.author}</h2>
             <h3>{quote.season}</h3>
             <h3>{quote.episode}</h3>
             <img src={quote.image} alt={quote.quote} />
             <div>
-                <Link to={`/quotes/${quote}/edit`}>
+                <Link to={`/quotes/edit`}>
                     <button>Edit</button>
                 </Link>
                 <button onClick={handleDelete}>Delete</button>
             </div>
-        </>
+        </div>
     )
 }

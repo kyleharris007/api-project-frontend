@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
-import { updateCat, getCat } from '../services/quotes';
+import { updateQuote, getQuote} from '../services/quotes';
 
 export default function QuoteEdit() {
   const [quote, setQuote] = useState({
@@ -25,14 +25,14 @@ export default function QuoteEdit() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    await updateCat(id, quote)
-    navigate(`/quotes/${quote}`)
+    await updateQuote(id, quote)
+    navigate(`/quotes`)
   }
 
   const handleChange = (e) => {
     const { name, value } = e.target
     
-    setCat((prevQuote) => ({
+    setQuote((prevQuote) => ({
       ...prevQuote,
       [name]: value
     }))

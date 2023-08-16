@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { createJoke } from '../services/quotes'
+import { createQuote } from '../services/quotes'
 
 export default function QuoteCreate() {
     const [quote, setQuote] = useState({
@@ -15,7 +15,7 @@ export default function QuoteCreate() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await QuoteCreate(quote)
+        await createQuote(quote)
         navigate('/quotes')
     }
 
