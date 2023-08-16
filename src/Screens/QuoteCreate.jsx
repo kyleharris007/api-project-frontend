@@ -15,7 +15,7 @@ export default function QuoteCreate() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await createQuote(quote)
+        await QuoteCreate(quote)
         navigate('/quotes')
     }
 

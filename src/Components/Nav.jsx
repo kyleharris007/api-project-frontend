@@ -8,4 +8,5 @@ export default function Nav() {
             <NavLink to="/add-joke">New Quote</NavLink>
         </nav>
     )
-}
+};
+

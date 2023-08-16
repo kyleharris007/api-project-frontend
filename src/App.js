@@ -1,4 +1,4 @@
-import Nav from './components/Nav';
+import Nav from './components/Nav.jsx';
 import Home from './Screens/Home';
 import Quotes from './Screens/Quotes';
 import QuoteDetail from './Screens/QuoteDetail';

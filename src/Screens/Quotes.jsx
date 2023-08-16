@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getJokes } from '../Services/quotes';
-import Joke from '../Components/Quote';
+import Quote from '../Components/Quote';
 
 export default function Jokes() {
     const [jokes, setJokes] = useState([])
