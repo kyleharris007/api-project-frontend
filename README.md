@@ -4,6 +4,7 @@ For this project, I took the Seinfeld API, and the backend of a fellow Software 
 # Built With
 I used the following software to build out the frontend of this application:
         -React
+        -Netlify
         -JavaScript
         -HTML
         -CSS
