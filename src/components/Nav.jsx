@@ -5,7 +5,7 @@ export default function Nav() {
         <nav>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/quotes">Quotes</NavLink>
-            <NavLink to="/add-joke">New Quote</NavLink>
+            <NavLink to="/add-quote">New Quote</NavLink>
         </nav>
     )
 };

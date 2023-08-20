@@ -13,20 +13,20 @@ export const getQuotes = async () => {
 // Function to get individual quote
 export const getQuote = async (id) => {
     try {
-        const response = await api.get(`/quotes`);
+        const response = await api.get(`/quotes/${id}`);
         return response.data;
     } catch (error) {
-        console.log("Error getting joke", error)
+        console.log("Error getting quote", error)
     }
 };
 
 // Function to create a quote
-export const createQuote = async (joke) => {
+export const createQuote = async (quote) => {
     try {
         const response = await api.post(`/quotes`);
         return response.data;
     } catch (error) {
-        console.log("Error creating joke", error)
+        console.log("Error creating quote", error)
     }
 }
 

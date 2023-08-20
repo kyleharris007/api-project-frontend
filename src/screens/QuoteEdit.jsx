@@ -70,7 +70,7 @@ export default function QuoteEdit() {
           onChange={handleChange}
         />
         <input
-          type="image"
+          type="text"
           placeholder="Please add your quote image URL"
           name="image"
           value={quote.image}

@@ -48,6 +48,7 @@ export default function QuoteCreate() {
                 />
                 <input
                 type="number"
+                placeholder="Season"
                 name="season"
                 value={quote.season}
                 onChange={handleChange}
