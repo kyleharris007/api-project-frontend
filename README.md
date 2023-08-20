@@ -16,3 +16,11 @@
 # Usage
     This repository can be used for anyone trying to build out a functional application that allows you to interact and modify third-part api data. The api is interchangeable and a user can build out something similar with different data.
 
+# Contributing
+    If you wish to contribute to this repository or want to offer any suggestions to optimize it, please feel free to send a pull request with your recommended changes. Any contribution is encouraged!
+
+# Contact
+    Kyle Harris - https://www.linkedin.com/in/kyleharris007/
+    
+
+
